@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="university.FXMLDocumentController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="173.0" layoutY="127.0" prefHeight="35.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="45.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="-86.0" prefHeight="35.0" prefWidth="1100.0" styleClass="top-form" stylesheets="@homestyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label fx:id="head" layoutX="59.0" layoutY="12.0" text="University Mangement System">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <ImageView fitHeight="21.0" fitWidth="36.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/lol.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutY="100.0" prefHeight="555.0" prefWidth="200.0" styleClass="nav-form" stylesheets="@homestyle.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="67.0" layoutY="93.0" size="7em" />
+                              <Label layoutX="23.0" layoutY="113.0" prefHeight="46.0" prefWidth="162.0" text="Welcome, Admin" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="student_btn" layoutX="6.0" layoutY="175.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="46.0" prefWidth="190.0" styleClass="nav-btn" stylesheets="@homestyle.css" text="Students" textAlignment="JUSTIFY">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="INFO_CIRCLE" size="2em" />
+                                 </graphic></Button>
+                              <Button fx:id="department_btn" layoutX="7.0" layoutY="221.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="46.0" prefWidth="190.0" styleClass="nav-btn" stylesheets="@homestyle.css" text="Departments">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="BUILDING" size="2em" />
+                                 </graphic></Button>
+                              <Button fx:id="programs_btn" layoutX="5.0" layoutY="267.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="46.0" prefWidth="190.0" styleClass="nav-btn" stylesheets="@homestyle.css" text="Programs">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="2em" />
+                                 </graphic></Button>
+                              <Button fx:id="Courses_btn" layoutX="5.0" layoutY="313.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="46.0" prefWidth="190.0" styleClass="nav-btn" stylesheets="@homestyle.css" text="Courses">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="BOOK" size="2em" />
+                                 </graphic></Button>
+                              <Button fx:id="Grade_btn" layoutX="5.0" layoutY="359.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="46.0" prefWidth="190.0" styleClass="nav-btn" stylesheets="@homestyle.css" text="Grades">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="CHECK_CIRCLE" size="2em" />
+                                 </graphic></Button>
+                              <Button fx:id="Report_btn" layoutX="5.0" layoutY="405.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="46.0" prefWidth="190.0" styleClass="nav-btn" stylesheets="@homestyle.css" text="Reports">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="TABLE" size="2em" />
+                                 </graphic></Button>
+                           </children></AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="white-bg" stylesheets="@homestyle.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="Student_Form" layoutX="12.0" layoutY="12.0" prefHeight="529.0" prefWidth="875.0" stylesheets="@homestyle.css" visible="false" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="12.0">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <AnchorPane prefHeight="529.0" prefWidth="876.0" stylesheets="@homestyle.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="searchstudent" layoutX="14.0" layoutY="14.0" onAction="#addStudentsSearch" prefHeight="31.0" prefWidth="283.0" promptText="Search" styleClass="search" stylesheets="@homestyle.css" />
+                                    <TableView fx:id="Student_Table_View" layoutX="7.0" layoutY="53.0" onMouseClicked="#addStudentsSelect" prefHeight="200.0" prefWidth="856.0" stylesheets="@homestyle.css">
+                                      <columns>
+                                        <TableColumn fx:id="addStudents_col_studentNum" prefWidth="149.0" text="National ID" />
+                                          <TableColumn fx:id="addStudents_col_FirstName" prefWidth="101.0" text="First Name" />
+                                          <TableColumn fx:id="addStudents_col_LastName" prefWidth="109.0" text="Last Name" />
+                                          <TableColumn fx:id="addStudents_col_Gender" prefWidth="89.0" text="Gender" />
+                                          <TableColumn fx:id="addStudents_col_Phone" prefWidth="154.0" text="Phone " />
+                                          <TableColumn fx:id="addStudents_col_Email" prefWidth="247.0" text="Email" />
+                                          <TableColumn fx:id="addStudents_col_City" minWidth="80.0" prefWidth="71.0" text="City" />
+                                          <TableColumn fx:id="addStudents_col_Street" minWidth="150.0" prefWidth="104.0" text="Street" />
+                                          <TableColumn fx:id="addStudents_col_ProgramID" minWidth="80.0" text="Program ID" />
+                                          <TableColumn fx:id="gpa_col" minWidth="80.0" text="GPA" />
+                                      </columns>
+                                    </TableView>
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="25.0" layoutY="34.0" />
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="58.0" layoutY="287.0" text="National ID : " />
+                              <TextField fx:id="nat_id" layoutX="151.0" layoutY="282.0" promptText="14 numbers" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Label layoutX="58.0" layoutY="330.0" text="First Name : " />
+                              <TextField fx:id="fname" layoutX="151.0" layoutY="325.0" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Label layoutX="58.0" layoutY="379.0" text="Last Name : " />
+                              <TextField fx:id="lname" layoutX="151.0" layoutY="374.0" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <ComboBox fx:id="combo_gender" layoutX="151.0" layoutY="422.0" onAction="#addStudentsGenderList" prefHeight="31.0" prefWidth="188.0" promptText="Choose" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Label layoutX="61.0" layoutY="427.0" text="Gender : " />
+                              <Label layoutX="465.0" layoutY="283.0" text="Phone : " />
+                              <TextField fx:id="phone" layoutX="536.0" layoutY="282.0" prefHeight="31.0" prefWidth="152.0" promptText="+20" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Label layoutX="467.0" layoutY="330.0" text="Email : " />
+                              <TextField fx:id="email" layoutX="536.0" layoutY="325.0" prefHeight="31.0" prefWidth="235.0" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Label layoutX="474.0" layoutY="379.0" text="City : " />
+                              <TextField fx:id="city" layoutX="536.0" layoutY="374.0" prefHeight="31.0" prefWidth="107.0" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Label layoutX="654.0" layoutY="379.0" text="Street : " />
+                              <TextField fx:id="street" layoutX="705.0" layoutY="374.0" prefHeight="31.0" prefWidth="161.0" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Label layoutX="451.0" layoutY="427.0" text="Program ID : " />
+                              <Button fx:id="Clearstudent" layoutX="240.0" layoutY="485.0" mnemonicParsing="false" onAction="#addStudentsClear" prefHeight="30.0" prefWidth="67.0" styleClass="clear-btn" stylesheets="@homestyle.css" text="Clear" />
+                              <Button fx:id="Deletestudent" layoutX="334.0" layoutY="485.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addStudentsDelete" prefHeight="30.0" prefWidth="67.0" styleClass="delete-btn" stylesheets="@homestyle.css" text="Delete" />
+                              <Button fx:id="updatestudent" layoutX="427.0" layoutY="485.0" mnemonicParsing="false" onAction="#addStudentsUpdate" prefHeight="30.0" prefWidth="67.0" styleClass="update-btn" stylesheets="@homestyle.css" text="Update" />
+                              <Button fx:id="Addstudent" layoutX="524.0" layoutY="485.0" mnemonicParsing="false" onAction="#addStudentsAdd" prefHeight="30.0" prefWidth="67.0" styleClass="add-btn" stylesheets="@homestyle.css" text="Add" />
+                              <ComboBox fx:id="combo_prog" layoutX="536.0" layoutY="422.0" onAction="#addStudentsGenderList" prefHeight="31.0" prefWidth="109.0" promptText="Choose" styleClass="textfield" stylesheets="@homestyle.css" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="Department_Form" layoutX="12.0" layoutY="12.0" prefHeight="529.0" prefWidth="875.0" stylesheets="@homestyle.css" visible="false">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <AnchorPane prefHeight="530.0" prefWidth="876.0" stylesheets="@homestyle.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="searchdepartment" layoutX="169.0" layoutY="14.0" onAction="#addStudentsSearch" prefHeight="31.0" prefWidth="283.0" promptText="Search" styleClass="search" stylesheets="@homestyle.css" />
+                                    <TableView fx:id="Department_Table_View" layoutX="169.0" layoutY="56.0" onMouseClicked="#addDepartmentSelect" prefHeight="220.0" prefWidth="553.0" stylesheets="@homestyle.css">
+                                       <columns>
+                                          <TableColumn fx:id="DepID_col" prefWidth="127.0" text="Department ID" />
+                                          <TableColumn fx:id="DepName_col" prefWidth="421.0" text="Department Name" />
+                                       </columns>
+                                    </TableView>
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="173.0" layoutY="31.0" />
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="189.0" layoutY="315.0" text="Department ID" />
+                              <TextField fx:id="depid" layoutX="326.0" layoutY="310.0" prefHeight="31.0" prefWidth="116.0" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Label layoutX="189.0" layoutY="360.0" text="Department Name" />
+                              <TextField fx:id="depname" layoutX="326.0" layoutY="355.0" prefHeight="31.0" prefWidth="262.0" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Button fx:id="cleardepartment" layoutX="231.0" layoutY="446.0" mnemonicParsing="false" onAction="#adddepartmentClear" prefHeight="30.0" prefWidth="67.0" styleClass="clear-btn" stylesheets="@homestyle.css" text="Clear" />
+                              <Button fx:id="deletedepartment" layoutX="325.0" layoutY="446.0" mnemonicParsing="false" onAction="#addDepartmentDelete" prefHeight="30.0" prefWidth="67.0" styleClass="delete-btn" stylesheets="@homestyle.css" text="Delete" />
+                              <Button fx:id="updatedepartment" layoutX="418.0" layoutY="446.0" mnemonicParsing="false" onAction="#addDepartmentUpdate" prefHeight="30.0" prefWidth="67.0" styleClass="update-btn" stylesheets="@homestyle.css" text="Update" />
+                              <Button fx:id="adddepartmnet" layoutX="515.0" layoutY="446.0" mnemonicParsing="false" onAction="#addDepartmentAdd" prefHeight="30.0" prefWidth="67.0" styleClass="add-btn" stylesheets="@homestyle.css" text="Add" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="Program_Form" layoutX="12.0" layoutY="12.0" prefHeight="529.0" prefWidth="875.0" stylesheets="@homestyle.css" visible="false">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <AnchorPane prefHeight="529.0" prefWidth="875.0" stylesheets="@homestyle.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="searchprogram" layoutX="108.0" layoutY="14.0" onAction="#addStudentsSearch" prefHeight="31.0" prefWidth="283.0" promptText="Search" styleClass="search" stylesheets="@homestyle.css" />
+                                    <TableView fx:id="Program_Table_View" layoutX="108.0" layoutY="56.0" onMouseClicked="#addProgramSelect" prefHeight="220.0" prefWidth="660.0" stylesheets="@homestyle.css">
+                                       <columns>
+                                          <TableColumn fx:id="ProgID_col" prefWidth="119.0" text="Program ID" />
+                                          <TableColumn fx:id="ProgName_col" prefWidth="407.0" text="Program Name" />
+                                          <TableColumn fx:id="DepIDF_col" editable="false" minWidth="0.0" prefWidth="130.0" text="Department ID" />
+                                       </columns>
+                                    </TableView>
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="112.0" layoutY="31.0" />
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="186.0" layoutY="395.0" text="Department ID" />
+                              <Label layoutX="187.0" layoutY="348.0" text="Program Name" />
+                              <TextField fx:id="progname" layoutX="325.0" layoutY="343.0" prefHeight="31.0" prefWidth="262.0" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Button fx:id="clearprogram" layoutX="231.0" layoutY="446.0" mnemonicParsing="false" onAction="#addProgramClear" prefHeight="30.0" prefWidth="67.0" styleClass="clear-btn" stylesheets="@homestyle.css" text="Clear" />
+                              <Button fx:id="deleteprogram" layoutX="325.0" layoutY="446.0" mnemonicParsing="false" onAction="#addProgramDelete" prefHeight="30.0" prefWidth="67.0" styleClass="delete-btn" stylesheets="@homestyle.css" text="Delete" />
+                              <Button fx:id="updateprogram" layoutX="418.0" layoutY="446.0" mnemonicParsing="false" onAction="#addProgramUpdate" prefHeight="30.0" prefWidth="67.0" styleClass="update-btn" stylesheets="@homestyle.css" text="Update" />
+                              <Button fx:id="addprogram" layoutX="515.0" layoutY="446.0" mnemonicParsing="false" onAction="#addProgramAdd" prefHeight="30.0" prefWidth="67.0" styleClass="add-btn" stylesheets="@homestyle.css" text="Add" />
+                              <Label layoutX="187.0" layoutY="300.0" text="Program ID" />
+                              <TextField fx:id="progid" layoutX="324.0" layoutY="295.0" prefHeight="31.0" prefWidth="116.0" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <ComboBox fx:id="Combo_DepID" layoutX="324.0" layoutY="390.0" prefWidth="150.0" promptText="choose" styleClass="textfield" stylesheets="@homestyle.css" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="Course_Form" layoutX="12.0" layoutY="12.0" onMouseClicked="#addCourseSelect" prefHeight="529.0" prefWidth="875.0" stylesheets="@homestyle.css" visible="false">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <AnchorPane prefHeight="533.0" prefWidth="876.0" stylesheets="@homestyle.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="searchcourse" layoutX="108.0" layoutY="14.0" onAction="#addStudentsSearch" prefHeight="31.0" prefWidth="283.0" promptText="Search" styleClass="search" stylesheets="@homestyle.css" />
+                                    <TableView fx:id="Course_Table_View1" layoutX="108.0" layoutY="56.0" onMouseClicked="#addCourseSelect" prefHeight="220.0" prefWidth="660.0" stylesheets="@homestyle.css">
+                                       <columns>
+                                          <TableColumn fx:id="CourseID_col" prefWidth="119.0" text="Course ID" />
+                                          <TableColumn fx:id="CourseName_col" prefWidth="407.0" text="Course Name" />
+                                          <TableColumn fx:id="ProgIDF_col" prefWidth="128.0" resizable="false" text="Program ID" />
+                                       </columns>
+                                    </TableView>
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="112.0" layoutY="31.0" />
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="186.0" layoutY="395.0" text="Program ID" />
+                              <Label layoutX="187.0" layoutY="348.0" text="Course Name" />
+                              <TextField fx:id="Coursename" layoutX="325.0" layoutY="343.0" prefHeight="31.0" prefWidth="262.0" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Button fx:id="clearcourse" layoutX="231.0" layoutY="446.0" mnemonicParsing="false" onAction="#addCourseClear" prefHeight="30.0" prefWidth="67.0" styleClass="clear-btn" stylesheets="@homestyle.css" text="Clear" />
+                              <Button fx:id="deletecourse" layoutX="325.0" layoutY="446.0" mnemonicParsing="false" onAction="#addCourseDelete" prefHeight="30.0" prefWidth="67.0" styleClass="delete-btn" stylesheets="@homestyle.css" text="Delete" />
+                              <Button fx:id="updatecourse" layoutX="418.0" layoutY="446.0" mnemonicParsing="false" onAction="#addCourseUpdate" prefHeight="30.0" prefWidth="67.0" styleClass="update-btn" stylesheets="@homestyle.css" text="Update" />
+                              <Button fx:id="addcourse" layoutX="515.0" layoutY="446.0" mnemonicParsing="false" onAction="#addCourseAdd" prefHeight="30.0" prefWidth="67.0" styleClass="add-btn" stylesheets="@homestyle.css" text="Add" />
+                              <Label layoutX="187.0" layoutY="300.0" text="Course ID" />
+                              <TextField fx:id="coursegid" layoutX="324.0" layoutY="295.0" prefHeight="31.0" prefWidth="116.0" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <ComboBox fx:id="Combo_ProgID" layoutX="324.0" layoutY="390.0" prefHeight="31.0" prefWidth="116.0" promptText="choose" styleClass="textfield" stylesheets="@homestyle.css" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="Grade_Form" layoutX="12.0" layoutY="12.0" onMouseClicked="#addCourseSelect" prefHeight="529.0" prefWidth="875.0" stylesheets="@homestyle.css" visible="false">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <AnchorPane prefHeight="531.0" prefWidth="880.0" stylesheets="@homestyle.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="searchgrade" layoutX="20.0" layoutY="14.0" onAction="#addStudentsSearch" prefHeight="31.0" prefWidth="283.0" promptText="Search" styleClass="search" stylesheets="@homestyle.css" />
+                                    <TableView fx:id="Grade_Table_View11" layoutX="20.0" layoutY="56.0" onMouseClicked="#addGradeSelect" prefHeight="213.0" prefWidth="815.0" stylesheets="@homestyle.css">
+                                       <columns>
+                                          <TableColumn fx:id="nationalID_col" prefWidth="246.0" text="National ID" />
+                                          <TableColumn fx:id="courseID_col" prefWidth="128.0" text="Course ID" />
+                                          <TableColumn fx:id="year_col" prefWidth="171.0" resizable="false" text="Year" />
+                                          <TableColumn fx:id="semester_col" prefWidth="134.0" resizable="false" text="Semester" />
+                                          <TableColumn fx:id="grade_col" prefWidth="132.0" resizable="false" text="Grade" />
+                                       </columns>
+                                    </TableView>
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="24.0" layoutY="31.0" />
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="48.0" layoutY="359.0" text="Course ID" />
+                              <Button fx:id="cleargrade" layoutX="231.0" layoutY="446.0" mnemonicParsing="false" onAction="#addGradeClear" prefHeight="30.0" prefWidth="67.0" styleClass="clear-btn" stylesheets="@homestyle.css" text="Clear" />
+                              <Button fx:id="deletegrade" layoutX="325.0" layoutY="446.0" mnemonicParsing="false" onAction="#addGradeDelete" prefHeight="30.0" prefWidth="67.0" styleClass="delete-btn" stylesheets="@homestyle.css" text="Delete" />
+                              <Button fx:id="updategrade" layoutX="418.0" layoutY="446.0" mnemonicParsing="false" onAction="#AddupdateGrade" prefHeight="30.0" prefWidth="67.0" styleClass="update-btn" stylesheets="@homestyle.css" text="Update" />
+                              <Button fx:id="addgrade" layoutX="515.0" layoutY="446.0" mnemonicParsing="false" onAction="#addGradeAdd" prefHeight="30.0" prefWidth="67.0" styleClass="add-btn" stylesheets="@homestyle.css" text="Add" />
+                              <Label layoutX="43.0" layoutY="300.0" text="National ID" />
+                              <TextField fx:id="year" layoutX="407.0" layoutY="295.0" prefHeight="31.0" prefWidth="116.0" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <ComboBox fx:id="combo_natid" layoutX="140.0" layoutY="295.0" prefHeight="31.0" prefWidth="185.0" promptText="choose" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <ComboBox fx:id="combo_courseid" layoutX="140.0" layoutY="354.0" prefHeight="31.0" prefWidth="116.0" promptText="choose" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Label layoutX="354.0" layoutY="300.0" text="Year :" />
+                              <Label layoutX="338.0" layoutY="359.0" text="Semester: " />
+                              <TextField fx:id="grade" layoutX="676.0" layoutY="295.0" prefHeight="31.0" prefWidth="75.0" promptText="\%" styleClass="textfield" stylesheets="@homestyle.css" />
+                              <Label layoutX="623.0" layoutY="300.0" text="Grade" />
+                              <ComboBox fx:id="combo_semester" layoutX="408.0" layoutY="354.0" prefHeight="31.0" prefWidth="116.0" promptText="choose" styleClass="textfield" stylesheets="@homestyle.css" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="Report_Form" layoutX="12.0" layoutY="12.0" onMouseClicked="#addCourseSelect" prefHeight="529.0" prefWidth="862.0" stylesheets="@homestyle.css">
+                           <styleClass>
+                              <String fx:value="white-bg" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <AnchorPane prefHeight="531.0" prefWidth="874.0" stylesheets="@homestyle.css">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="searchreport" layoutX="101.0" layoutY="14.0" onAction="#addStudentsSearch" prefHeight="31.0" prefWidth="283.0" promptText="Search" styleClass="search" stylesheets="@homestyle.css" />
+                                    <TableView fx:id="Report_Table_View" layoutX="101.0" layoutY="56.0" onMouseClicked="#addGradeSelect" prefHeight="401.0" prefWidth="660.0" stylesheets="@homestyle.css">
+                                       <columns>
+                                          <TableColumn fx:id="lol1_col" prefWidth="105.0" text="Course ID" />
+                                          <TableColumn fx:id="lol2_col" prefWidth="307.0" text="Course Name " />
+                                          <TableColumn fx:id="lol3_col" prefWidth="138.0" resizable="false" text="Enrolled Student" />
+                                          <TableColumn fx:id="lol4_col" prefWidth="109.0" resizable="false" text="Average GPA" />
+                                       </columns>
+                                    </TableView>
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="109.0" layoutY="33.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

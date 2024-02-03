@@ -1,0 +1,161 @@
+INSERT INTO UNIVERSITY.Department (Dep_ID, Dep_Name) VALUES (1, 'Computer Science');
+INSERT INTO UNIVERSITY.Department (Dep_ID, Dep_Name) VALUES (2, 'Electrical Engineering');
+INSERT INTO UNIVERSITY.Department (Dep_ID, Dep_Name) VALUES (3, 'Mechanical Engineering');
+INSERT INTO UNIVERSITY.Department (Dep_ID, Dep_Name) VALUES (4, 'Civil Engineering');
+
+
+-- Programs for Computer Science (Dep_ID = 1)
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (100, 'Software Engineering', 1);
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (101, 'Data Science and Analytics', 1);
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (102, 'Cybersecurity and Networks', 1);
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (103, 'Artificial Intelligence and Machine Learning', 1);
+
+-- Programs for Electrical Engineering (Dep_ID = 2)
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (104, 'Power Systems and Renewable Energy', 2);
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (105, 'Communication Systems and Signal Processing', 2);
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (106, 'Control Systems and Automation', 2);
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (107, 'Embedded Systems and IoT', 2);
+
+-- Programs for Mechanical Engineering (Dep_ID = 3)
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (108, 'Automotive Engineering and Robotics', 3);
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (109, 'Aerospace Engineering and Propulsion', 3);
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (110, 'Renewable Energy and Sustainability', 3);
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (111, 'Mechanical Power', 3);
+
+-- Programs for Civil Engineering (Dep_ID = 4)
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (112, 'Structural Engineering and Construction Management', 4);
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (113, 'Transportation Engineering and Urban Planning', 4);
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (114, 'Environmental Engineering and Sustainable Development', 4);
+INSERT INTO UNIVERSITY.Program (Prog_ID, Prog_Name, Dep_ID) VALUES (115, 'Water Resources and Hydraulics', 4);
+
+
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1000, 'Introduction to Programming', 100);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1001, 'Data Structures and Algorithms', 100);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1002, 'Object-Oriented Programming', 100);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1003, 'Database Systems', 100);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1004, 'Software Engineering Principles', 100);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1005, 'Introduction to Data Science', 101);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1006, 'Probability and Statistics', 101);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1007, 'Machine Learning', 101);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1008, 'Data Visualization', 101);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1009, 'Big Data Analytics', 101);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1010, 'Introduction to Cybersecurity', 102);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1011, 'Network Security', 102);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1012, 'Cryptography', 102);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1013, 'Digital Forensics', 102);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1014, 'Incident Response', 102);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1015, 'Introduction to Artificial Intelligence', 103);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1016, 'Machine Learning', 103);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1017, 'Deep Learning', 103);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1018, 'Natural Language Processing', 103);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1019, 'Computer Vision', 103);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1020, 'Fundamentals of Electric Power Systems', 104);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1021, 'Renewable Energy Sources', 104);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1022, 'Power Electronics', 104);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1023, 'Power System Analysis', 104);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1024, 'Smart Grids', 104);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1025, 'Signals and Systems', 105);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1026, 'Digital Signal Processing', 105);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1027, 'Communication Systems', 105);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1028, 'Wireless Communications', 105);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1029, 'Optical Communications', 105);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1030, 'Control Systems Engineering', 106);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1031, 'Feedback Control Systems', 106);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1032, 'Industrial Automation', 106);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1033, 'Electrical Circuits', 106);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1034, 'PLC Circuits', 106);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1035, 'Introduction to Embedded Systems', 107);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1036, 'Microcontrollers and Programming', 107);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1037, 'Sensor Networks and Internet of Things', 107);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1038, 'Real-Time Systems', 107);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1039, 'Embedded System Design', 107);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1040, 'Vehicle Mechanics and Dynamics', 108);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1041, 'Automotive Control Systems', 108);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1042, 'Mechatronics and Robotics', 108);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1043, 'Autonomous Vehicles', 108);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1044, 'Intelligent Transportation Systems', 108);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1045, 'Introduction to Aerospace Engineering', 109);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1046, 'Aerodynamics and Flight Mechanics', 109);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1047, 'Aircraft Propulsion Systems', 109);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1048, 'Spacecraft Design and Propulsion', 109);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1049, 'Aerospace Control Systems', 109);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1050, 'Fundamentals of Renewable Energy', 110);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1051, 'Solar Energy', 110);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1052, 'Wind Energy', 110);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1053, 'Hydropower and Ocean Energy', 110);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1054, 'Sustainability Engineering', 110);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1055, 'Thermodynamics and Heat Transfer', 111);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1056, 'Fluid Mechanics', 111);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1057, 'Machine Design', 111);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1058, 'Energy Systems', 111);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1059, 'Power Plant Engineering', 111);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1060, 'Statics and Mechanics of Materials', 112);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1061, 'Structural Analysis', 112);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1062, 'Reinforced Concrete Design', 112);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1063, 'Steel Structures Design', 112);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1064, 'Construction Management', 112);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1065, 'Transportation Planning and Modeling', 113);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1066, 'Highway Engineering', 113);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1067, 'Traffic Engineering', 113);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1068, 'Public Transportation Systems', 113);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1069, 'Urban Planning and Design', 113);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1070, 'Environmental Engineering Principles', 114);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1071, 'Water Quality and Wastewater Treatment', 114);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1072, 'Air Pollution Control', 114);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1073, 'Solid Waste Management', 114);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1074, 'Sustainable Development', 114);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1078, 'Coastal and Ocean Engineering', 115);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1079, 'Computational Hydraulics', 115);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1080, 'Groundwater Hydrology', 115);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1081, 'Water Quality Modeling', 115);
+INSERT INTO UNIVERSITY.Course (Course_ID, Course_Name, Prog_ID) VALUES (1082, 'Flood Risk Management', 115);
+
+
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29501020100012, 'Ahmed', 'Mohamed', 'Male', '01001234567', 'ahmed.mohamed@example.com', 'Cairo', '12 El-Tahrir Street', 100);
+
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29803030100022, 'Fatma', 'Abdelrahman', 'Female', '01111223344', 'fatma.abdelrahman@example.com', 'Alexandria', '7 Corniche Avenue', 101);
+
+-- Add 14 more similar insert statements with different details for the remaining students...
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29706150100034, 'Hassan', 'Ali', 'Male', '01234567890', 'hassan.ali@example.com', 'Giza', '21 Sphinx Street', 102);
+
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29912010100045, 'Nada', 'Mahmoud', 'Female', '01098765432', 'nada.mahmoud@example.com', 'Luxor', '5 Karnak Avenue', 103);
+	
+	INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29604180100056, 'Aya', 'Mohsen', 'Female', '01015678901', 'aya.mohsen@example.com', 'Port Said', '3 Suez Canal Street', 104);
+
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29407220100067, 'Ali', 'Ezzat', 'Male', '01122334455', 'ali.ezzat@example.com', 'Aswan', '15 Nile Corniche', 105);
+
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29810150100078, 'Mona', 'Fawzy', 'Female', '01234567890', 'mona.fawzy@example.com', 'Hurghada', '8 Red Sea View', 106);
+	
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29702230100089, 'Karim', 'Hassan', 'Male', '01098765432', 'karim.hassan@example.com', 'Luxor', '21 Karnak Avenue', 107);
+
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29911140100100, 'Sara', 'Ibrahim', 'Female', '01111223344', 'sara.ibrahim@example.com', 'Sharm El Sheikh', '10 Red Sea Boulevard', 108);
+
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29608050100111, 'Hassan', 'Khalil', 'Male', '01234567890', 'hassan.khalil@example.com', 'Marsa Matruh', '4 Mediterranean View', 109);
+
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29401260100122, 'Nour', 'Khaled', 'Female', '01015678901', 'nour.khaled@example.com', 'Asyut', '18 Nile Street', 110);
+	
+	INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29506170100133, 'Salma', 'Mohamed', 'Female', '01122334455', 'salma.mohamed@example.com', 'Minya', '9 Sphinx Street', 111);
+
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29911280100144, 'Mohamed', 'Salem', 'Male', '01234567890', 'mohamed.salem@example.com', 'Suez', '16 Canal Street', 112);
+
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29701090100155, 'Amina', 'Fathi', 'Female', '01098765432', 'amina.fathi@example.com', 'Ismailia', '5 Suez Canal View', 113);
+
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29602200100166, 'Khaled', 'Sami', 'Male', '01111223344', 'khaled.sami@example.com', 'Fayoum', '20 Oasis Street', 114);
+	
+INSERT INTO UNIVERSITY.Student (Nat_ID, F_Name, L_Name, Gender, Phone, Email, City, Street, Prog_ID) VALUES
+    (29409210100177, 'Laila', 'Hassan', 'Female', '01234567890', 'laila.hassan@example.com', 'Beni Suef', '11 Nile Street', 115);
